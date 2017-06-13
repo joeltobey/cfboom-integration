@@ -1,0 +1,38 @@
+{
+    "name":"<cfboom/> Integration",
+    "version":"1.0.0",
+    "author":"Joel Tobey <joeltobey@gmail.com>",
+    "slug":"cfboom-integration",
+    "type":"modules",
+    "homepage":"https://github.com/joeltobey/cfboom-integration",
+    "documentation":"https://github.com/joeltobey/cfboom-integration/wiki",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/joeltobey/cfboom-integration"
+    },
+    "shortDescription":"Common 3rd party integration principles",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[
+        "Joel Tobey <joeltobey@gmail.com>"
+    ],
+    "engines":[
+        {
+            "type":"lucee",
+            "version":">4.5"
+        },
+        {
+            "type":"adobe",
+            "version":">9.02"
+        }
+    ],
+    "ignore":[
+        "**/.*",
+        "tests",
+        "*/.md"
+    ]
+}
