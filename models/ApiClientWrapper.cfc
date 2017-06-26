@@ -22,7 +22,6 @@ component
   displayname="Class ApiClientWrapper"
   output="false"
 {
-  property name="emailService" inject="EmailService@cfboomMail";
   property name="defaultNumberOfRetries" inject="coldbox:setting:defaultNumberOfRetries@cfboom-integration";
   property name="defaultRetrySleep" inject="coldbox:setting:defaultRetrySleep@cfboom-integration";
   property name="log" inject="logbox:logger:{this}";

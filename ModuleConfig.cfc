@@ -24,7 +24,7 @@ component
   this.author             = "Joel Tobey";
   this.webURL             = "https://github.com/joeltobey/cfboom-integration";
   this.description        = "Common 3rd party integration principles";
-  this.version            = "1.0.0";
+  this.version            = "0.1.0";
   // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
   this.viewParentLookup   = true;
   // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
@@ -38,45 +38,15 @@ component
   // Auto-map models
   this.autoMapModels      = true;
   // Module Dependencies
-  this.dependencies       = [ "cfboom-mail" ];
+  this.dependencies       = [ "cfboom-lang" ];
 
   function configure() {
-
-    // parent settings
-    parentSettings = {};
 
     // module settings - stored in modules.name.settings
     settings = {
       "defaultNumberOfRetries" = 0,
       "defaultRetrySleep" = 1000
     };
-
-    // Layout Settings
-    layoutSettings = {
-      defaultLayout = ""
-    };
-
-    // datasources
-    datasources = {};
-
-    // SES Routes
-    routes = [
-      // Module Entry Point
-      { pattern="/", handler="home", action="index" },
-      // Convention Route
-      { pattern="/:handler/:action?" }
-    ];
-
-    // Custom Declared Points
-    interceptorSettings = {
-      customInterceptionPoints = ""
-    };
-
-    // Custom Declared Interceptors
-    interceptors = [];
-
-    // Binder Mappings
-    // binder.map("Alias").to("#moduleMapping#.model.MyService");
 
   }
 
